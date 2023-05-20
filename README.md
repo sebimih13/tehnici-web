@@ -1,7 +1,7 @@
 # Tehnici Web
 Curs Tehnici Web FMI 2022-2023
    
-## Laborator 2 - Rezolvari
+## Laborator 1 - Rezolvari
 [Raspunsuri](https://sebimih13.github.io/tehnici-web/Laborator%201/rezolvari/rez.txt)  
   
 ## Laborator 2 - Rezolvari

@@ -1,0 +1,382 @@
+/* SET FONT */
+* {
+    font-family: 'Poppins'
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* BODY */
+body {
+    background: rgb(63, 75, 10);
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100%;
+
+    color: #fff;
+}
+
+/* SIDE-BAR */
+body > .side-bar {
+    background-color: #1D3755;
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    width: 200px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+
+    border-right: solid;
+    border-width: 5px;
+    border-color: rgb(100,114,126);
+}
+
+/* CONTENT */
+body > .content {
+    background: rgb(39,41,45);
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* SIDE-BAR HEADER */
+body > .side-bar > header {
+    background-color: rgb(55,55,55);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body > .side-bar > header > i {
+    color: white;
+    align-self: flex-start;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body > .side-bar > header > i:hover {
+    color: rgb(185, 69, 3);
+}
+
+body > .side-bar > header > img {
+    width: 200px;
+
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* SIDE-BAR MAIN */
+body > .side-bar > .side-bar-main {
+    background-color: rgb(31,32,36);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+
+    height: 100%;
+}
+
+body > .side-bar > .side-bar-main > i {
+    list-style: none;
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body > .side-bar > .side-bar-main > .item { 
+    overflow: hidden;
+}
+
+body > .side-bar > .side-bar-main > .item > .menu-button {
+    display: block;
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px 20px;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+body > .side-bar > .side-bar-main > .item .menu-button:hover {
+    color: rgb(185, 69, 3);
+} 
+
+body > .side-bar > .side-bar-main > .item > .menu-button > .drop-down {
+    float: right;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+body > .side-bar > .side-bar-main > .item > .sub-menu > a > img {
+    width: 4em;
+    height: 4em;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+body > .side-bar > .side-bar-main > .item > .sub-menu {
+    background: rgb(185, 69, 3);
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+    transition-property: background, max-height;
+}
+
+body > .side-bar > .side-bar-main > .item > .sub-menu > a {
+    display: block;
+    position: relative;
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+body > .side-bar > .side-bar-main > .item > .sub-menu > a:hover {
+    background: rgb(255, 87, 51 );
+}
+
+body > .side-bar > .side-bar-main > .item:target > .sub-menu {
+    max-height: 500px;
+}
+
+/* CONTENT */
+body > .content > .main-content > main > section > p > a { 
+    color: rgb(185, 69, 3);
+}
+
+body > .content > .main-content {
+    background: rgb(39,41,45);
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+body > .content > .main-content > header {
+    background: rgb(31,32,36);
+    text-align: center;
+
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(100,114,126);
+}
+
+body > .content > .main-content > header > h2 {
+    background: rgb(31,32,36);
+    color: rgb(200, 195, 188);
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: rgb(200, 195, 188);
+    letter-spacing: 0;
+}
+
+body > .content > .main-content > main {
+    background: rgb(31,32,36);
+}
+
+body > .content > .main-content > main > section > p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body > .content > .main-content > main > section > h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body > .content > .main-content > main > section > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* SCOR */
+body > .content > .main-content > main > section#concluzii > div#scor {
+    display: flex;
+    flex-direction: row;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0;
+    margin: 0;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > div#nota {
+    padding: 50px;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > div#nota > h2 {
+    font-size: 50px;
+    margin: 0;
+    color: rgb(185, 69, 3);
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > div#nota > h3 {
+    padding: 0;
+    margin: 0;
+}
+
+/* STARS */
+body > .content > .main-content > main > section#concluzii > div#scor > ul {
+    color: rebeccapurple;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li {
+    list-style: none;
+
+    animation: animate;
+    animation-duration: 4.0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li::before {
+    content: "\2605";
+    font-size: 100px;
+    color: #ffbf00; 
+    text-shadow: 0 0 50px yellow;;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.2);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(0.2) rotateZ(360deg);
+    }
+}
+  
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li:nth-child(1) {
+    animation-delay: -1.2s;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li:nth-child(2) {
+    animation-delay: -1.0s;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li:nth-child(3) {
+    animation-delay: -0.8s;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li:nth-child(4) {
+    animation-delay: -0.6s;
+}
+
+body > .content > .main-content > main > section#concluzii > div#scor > ul > li:nth-child(5) {
+    animation-delay: -0.4s;
+}
+
+body > .content > footer {
+    background: rgb(185, 69, 3);
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    body > .side-bar {
+        width: 100px;
+    }
+
+    body {
+        grid-template-columns: 100px 1fr;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1300px) {
+    body > .side-bar {
+        width: 150px;
+    }
+    
+    body {
+        grid-template-columns: 150px 1fr;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    body > .side-bar {
+        width: 200px;
+    }
+
+    body {
+        grid-template-columns: 200px 1fr;
+    }
+}
+

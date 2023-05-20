@@ -1,0 +1,33 @@
+header {
+    background-color: rgb(171,62,0);
+
+    border: solid;
+    border-color: black;
+    border-width: 15px;
+
+    color: rgb(255,168,168);
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #5c94fc;
+
+    border-width: 15px;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: center;
+}
+

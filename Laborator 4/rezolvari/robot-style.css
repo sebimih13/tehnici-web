@@ -71,8 +71,8 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  overflow: auto;
-  justify-content: center;
+  overflow: hidden;
+  justify-content: space-around;
 }
 
 .robot_tooth {

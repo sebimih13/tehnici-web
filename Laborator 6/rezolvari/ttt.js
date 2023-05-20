@@ -96,7 +96,15 @@ function computer_move(tabla)
     return nextPoz;
 }
 
-var nume = prompt("Hai sa jucam X si 0. Cum te cheama?");
+var nume;
+while (true)
+{
+    nume = prompt("Hai sa jucam X si 0. Cum te cheama?");
+    if (nume != null)
+    {
+        break;
+    }
+}
 
 var alegerePlayer;
 while (true)

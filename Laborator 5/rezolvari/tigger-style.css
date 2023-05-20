@@ -160,7 +160,7 @@ html {
   height: 6%;
   width: 10%;
   background: pink;
-  transform: translate(0, -10px);
+  transform: translateX(-50%);
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
 

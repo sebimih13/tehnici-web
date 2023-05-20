@@ -1,0 +1,36 @@
+EX 2: 
+	snowy
+
+
+EX 3:
+	Milou
+
+
+EX 4: 
+	https://tintin.fandom.com/fr/wiki/Milou
+	a. Sunt permisi robotii
+	b. Admite HTTP2
+	c. Admite compresie HTTP
+
+
+EX 5: 
+	s = 200
+	a = b = c = 1
+
+	n = (1 + 1) * 200 + 200 / (1 + 2 * 1 + 1) + 1
+	  = 2 * 200 + 200 / 4 + 1
+	  = 400 + 50 + 1
+	  = 451
+
+	Ray Bradbury
+	Tigger
+
+EX 6: 
+	https://tintin.mudhalla.net/
+
+EX 7: 
+	GET, POST
+
+EX 8:
+	Consolat, Monospace
+	

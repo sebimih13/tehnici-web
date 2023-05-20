@@ -7,6 +7,7 @@
 1. Descărcați fișierul `door.zip` din directorul `resources`. Modificați fișierul JavaScript pentru a desena, folosind Canvas, o ușă precum cea din imaginea de mai jos.
 
 ![red door](resources/images/red-door.png){width=200}
+<img src="resources/images/red-door.png" width="200px">
 
 2. Modificați `door.js` astfel încât la apăsarea pe ușă, aceasta să fie colorată negru.
 

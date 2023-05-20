@@ -5,13 +5,11 @@
 ## [I see a red door and I want to paint it black](https://www.youtube.com/watch?v=O4irXQhgMqg)
 
 1. Descărcați fișierul `door.zip` din directorul `resources`. Modificați fișierul JavaScript pentru a desena, folosind Canvas, o ușă precum cea din imaginea de mai jos.
-
-![red door](resources/images/red-door.png){width=200}
-<img src="resources/images/red-door.png" width="200px">
+<img alt="red door" src="resources/images/red-door.png" width="200px">
 
 2. Modificați `door.js` astfel încât la apăsarea pe ușă, aceasta să fie colorată negru.
 
-![black door](resources/images/black-door.png){width=200}
+<img alt="black door" src="resources/images/black-door.png" width="200px">
 
 3. (opțional) Închideți ușa: adăugați în `door.js` cod JavaScript astfel încât la apăsarea pe ușă să pornească o animație de închidere a ușii. 
 
@@ -19,7 +17,7 @@
 
 4. Revedeți [exemplul](https://cs.unibuc.ro/~cechirita/tw/c11/#/38) Canvas din curs. Descărcați apoi fișierul `clock.zip` din directorul `resources`. Pornind de la exemplul din curs, modificați fișierul `clock.js` pentru a crea o animație a unui ceas digital precum cea de mai jos.
 
-![digital clock](resources/images/clock.gif){width=400}
+<img alt="digital clock" src="resources/images/clock.gif" width="400px">
 
 ## Pac-Man
 
@@ -27,15 +25,15 @@ Descărcați fișierul `pacman.zip` din directorul `resources`. Sarcina voastră
 
 4. Desenați-l mai întâi pe Pac-Man: desenați un disc galben și un disc mic negru (ochiul).
 
-![Pac-Man](resources/images/pacman0.png){width=200}
+<img alt="Pac-Man" src="resources/images/pacman0.png" width="200px">
 
 5. Adăugați-i gură lui Pac-Man desenând un sector de cerc negru.
 
-![hungry Pac-Man](resources/images/pacman1.png){width=200}
+<img alt="hungry Pac-Man" src="resources/images/pacman1.png" width="200px">
 
 6. Animați deschiderea și închiderea gurii. *Hint: va trebui să vă folosiți de timestap (diferența între timpul la care a început animația și timpul curent).* Adăugați apoi un disc mic alb care își schimbă poziția și opacitatea pentru a-l hrăni pe Pac-Man. *Hint: puteți folosi culori în formatul rgba pentru a controla transparența*.
 
-![nom nom Pac-Man](resources/images/pacman.gif){width=300}
+<img alt="nom nom Pac-Man" src="resources/images/pacman.gif" width="300px">
 
 7. [Jucați-vă Pac-Man](https://codepen.io/hellokatili/pen/xwKRmo)! Și citiți cu atenție codul jocului. Înțelegeți ce face fiecare linie de cod? 
 

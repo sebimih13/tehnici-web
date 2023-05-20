@@ -32,6 +32,5 @@ Curs Tehnici Web FMI 2022-2023
 + [hexagon-animatiles.html](https://sebimih13.github.io/tehnici-web/Laborator%205/rezolvari/hexagon-animatiles.html)  
   
 ## Proiect  
-[Proiect]("https://sebimih13.github.io/tehnici-web/Proiect/index.html")  
+[Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  
   
-

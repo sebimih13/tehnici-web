@@ -25,11 +25,14 @@ EX 5:
 	Ray Bradbury
 	Tigger
 
+
 EX 6: 
 	https://tintin.mudhalla.net/
 
+
 EX 7: 
 	GET, POST
+
 
 EX 8:
 	Consolat, Monospace

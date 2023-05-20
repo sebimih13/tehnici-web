@@ -30,6 +30,10 @@ Curs Tehnici Web FMI 2022-2023
 + [hexagon.html](https://sebimih13.github.io/tehnici-web/Laborator%205/rezolvari/hexagon.html)  
 + [hexagon-tiles.html](https://sebimih13.github.io/tehnici-web/Laborator%205/rezolvari/hexagon-tiles.html)  
 + [hexagon-animatiles.html](https://sebimih13.github.io/tehnici-web/Laborator%205/rezolvari/hexagon-animatiles.html)  
+
+## Laborator 6 - Rezolvari
+### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Laborator%206/rezolvari)  
++ [ttt.html](https://sebimih13.github.io/tehnici-web/Laborator%206/rezolvari/ttt.html)  
   
 ## Proiect  
 [Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  

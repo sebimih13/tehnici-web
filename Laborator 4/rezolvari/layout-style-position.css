@@ -1,0 +1,36 @@
+header {
+    clear: both;
+    height: 10vh;
+    background-color: #CDF0EA;
+}
+
+nav {
+    float: left;
+    height: 80vh;
+    width: 15%;
+    background-color: #FAF4B7;
+}
+
+article {
+    float: left;
+    height: 80vh;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    height: 80vh;
+    width: 15%;
+    background-color: #FAF4B7;
+}
+
+footer {
+    clear: both;
+    height: 10vh;
+    background-color: #F6C6EA;
+}
+
+body {
+    margin: 0;
+}
+

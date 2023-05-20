@@ -34,6 +34,10 @@ Curs Tehnici Web FMI 2022-2023
 ## Laborator 6 - Rezolvari
 ### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Laborator%206/rezolvari)  
 + [ttt.html](https://sebimih13.github.io/tehnici-web/Laborator%206/rezolvari/ttt.html)  
+
+## Laborator 7 - Rezolvari
+### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Laborator%207/rezolvari)  
++ [draw.html](https://sebimih13.github.io/tehnici-web/Laborator%207/rezolvari/draw.html)  
   
 ## Proiect  
 [Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  

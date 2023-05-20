@@ -100,7 +100,7 @@ var nume;
 while (true)
 {
     nume = prompt("Hai sa jucam X si 0. Cum te cheama?");
-    if (nume != null)
+    if (nume != "")
     {
         break;
     }

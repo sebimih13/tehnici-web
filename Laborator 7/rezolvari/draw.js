@@ -209,7 +209,11 @@ function delRow(row)
       10. Ștergeți linia cu numărul 'row' din tabla de desenat.
    */
 
-   // TODO
+   var cells = document.getElementsByClassName('row' + row);
+   for (let i = cells.length - 1; i >= 0; i--) 
+   {
+      cells[i].parentNode.removeChild(cells[i]);
+   } 
 }
 
 function delCol(col) 
@@ -218,7 +222,11 @@ function delCol(col)
       10. Ștergeți coloana cu numărul 'col' din tabla de desenat.
    */
 
-   // TODO
+   var cells = document.getElementsByClassName('column' + col);
+   for (let i = cells.length - 1; i >= 0; i--) 
+   {
+      cells[i].parentNode.removeChild(cells[i]);
+   } 
 }
 
 function shiftRow(row, pos) 
@@ -228,17 +236,38 @@ function shiftRow(row, pos)
       elementelor de pe linia cu numărul 'row' din tabla de desenat. 
    */
 
-   // TODO
+   var cells = document.getElementsByClassName('row' + row);
+   if (cells.length == 0)
+   {
+      return;
+   }
+   
+   var cellArray = Array.from(cells); 
+   
+   for (var i = 0; i < pos; i++) 
+   {
+      var lastElement = cellArray.pop(); // Extragem ultimul element din array
+      cellArray.unshift(lastElement); // Adăugăm elementul la începutul array-ului
+   }
+
+   var parent = cells[0].parentNode;
+   delRow(row);
+
+   cellArray.forEach(function (cell) { parent.appendChild(cell); });
 }
 
-function jumble() 
+function jumble(rows, cols) 
 {
    /*
       12. Folosiți funcția 'shiftRow' pentru a aplica o permutare circulară
       cu un număr aleator de poziții fiecărei linii din tabla de desenat.
    */
 
-   // TODO
+   for (var row = 0; row < rows; row++) 
+   {
+      var randomPos = Math.floor(Math.random() * cols); 
+      shiftRow(row, randomPos % cols); 
+   }
 }
 
 function transpose() 
@@ -280,13 +309,20 @@ window.onload = function()
    const cols = 30;	
    drawTable(rows, cols);
 
-   rainbow('orizontala');
+   rainbow('verticala');
 
    drawPixel(2, 2, 'white');
    drawLine(4, 4, 4, 10, 'white');
    drawRect(8, 8, 12, 12, 'white');
 
+   delRow(0);
+   delCol(0);
 
+   shiftRow(20, 3);
+   shiftRow(21, 2);
+   shiftRow(22, 1);
+
+   jumble(rows, cols);
 }
 
 

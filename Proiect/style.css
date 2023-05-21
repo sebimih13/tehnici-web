@@ -13,7 +13,7 @@ h1 {
 
 /* BODY */
 body {
-    background: rgb(63, 75, 10);
+    background: rgb(39,41,45);
     
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ body {
 
 /* SIDE-BAR */
 body > .side-bar {
-    background-color: #1D3755;
+    background-color: rgb(39,41,45);
     grid-column-start: 1;
     grid-row-start: 1;
 

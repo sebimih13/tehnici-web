@@ -266,7 +266,7 @@ function jumble(rows, cols)
    for (var row = 0; row < rows; row++) 
    {
       var randomPos = Math.floor(Math.random() * cols); 
-      shiftRow(row, randomPos % cols); 
+      shiftRow(row, randomPos); 
    }
 }
 

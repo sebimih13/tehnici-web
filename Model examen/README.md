@@ -21,7 +21,7 @@
 
 ## 2D graphics, events, fetch
 
-6. Scrieți un fișier HTML `magic.html` astfel încât să desenați, folosind fie elementul `canvas` (și cod JavaScript), fie cod CSS, un 8 magic ball ca în imaginea de mai jos.
+6. Scrieți un fișier HTML `magic.html` astfel încât să desenați, folosind fie elementul `canvas` (și cod JavaScript), fie cod CSS, un [8 magic ball](https://en.wikipedia.org/wiki/Magic_8_Ball) ca în imaginea de mai jos.
 
 <img alt="8 magic ball" src="resources/images/magic.png" width="200px">
 

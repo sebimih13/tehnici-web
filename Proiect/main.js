@@ -152,10 +152,6 @@ window.onload = function()
     const form = document.getElementById("formular");
     form.addEventListener("submit", submitForm);
 
-    // update easter-egg
-    const easterEgg = document.getElementById("easter-egg");
-    easterEgg.addEventListener
-
     // update text
     setInterval(changeColor, 1000);
     setInterval(changeColorBorder, 1100);

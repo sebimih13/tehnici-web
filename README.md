@@ -62,8 +62,8 @@ Curs Tehnici Web FMI 2022-2023
 ## Model Examen - Rezolvari
 ### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Model%20examen/resources)  
 + [grid.html](https://sebimih13.github.io/tehnici-web/Model%20examen/resources/grid.html)  
-+ [dots.html](https://sebimih13.github.io/tehnici-web/Laborator%2011/rezolvari/dots.html)  
-+ [magic.html](https://sebimih13.github.io/tehnici-web/Laborator%2011/rezolvari/magic.html)  
++ [dots.html](https://sebimih13.github.io/tehnici-web/Model%20examen/resources/dots.html)  
++ [magic.html](https://sebimih13.github.io/tehnici-web/Model%20examen/resources/magic.html)  
   
 ## Proiect  
 [Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  

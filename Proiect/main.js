@@ -124,6 +124,22 @@ function changeColorBorder()
     myImg.style.borderColor = textColor;
 }
 
+function updateTime()
+{
+    // Data GOW 2018
+    const dataReferinta = new Date('April 20, 2018');
+    const dataCurenta = new Date();
+    const timeDiff = dataCurenta - dataReferinta;
+
+    const zile = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const ore = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minute = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const secunde = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+    var textElement = document.getElementById("timp-trecut");
+    textElement.textContent = `${zile} zile, ${ore} ore, ${minute} minute și ${secunde} secunde`;
+}
+
 window.onload = function()
 {
     // add rating
@@ -155,5 +171,9 @@ window.onload = function()
     // update text
     setInterval(changeColor, 1000);
     setInterval(changeColorBorder, 1100);
+
+    // Data GOW 2018
+    updateTime();
+    setInterval(updateTime, 1000);
 }
 

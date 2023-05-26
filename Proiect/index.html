@@ -72,7 +72,7 @@
   
             <img src = "God-of-War-Ragnarok-Feature-GIF.gif" alt = "gow.gif">
             <p>Când ne referim la jocurile video, de cele mai multe ori le privim ca pe niște produse; ori după cum le descrie <a href="https://ro.wikipedia.org/wiki/Joc_video">Wikipedia</a>: “jocuri electronice care interacționează cu o interfață grafică pentru a genera răspuns vizual pe un ecran.” – Sună foarte plictisitor și poate că acum câteva decenii descrierea asta ar fi avut sens. Dar clar nu în 2022-ul în care o lansare triple-A are în spate sute de oameni, care sub formă de colectiv au investit mii de ore în dezvoltarea unui astfel de proiect. Și doar pentru atâta lucru, cred că jocurile video ar trebui privite mai bine. Nu doar ca niște simple produse, ci ca rodul pasiunii unui colectiv de oameni care și-au unit abilitățile tehnice și talentul pentru a duce la bun sfârșit un proiect extrem de complicat.</p>
-            <p>Chiar și azi, la deja patru ani distanță de ziua lansării sale, consider că God of War 2018 este unul dintre cele mai bune jocuri create vreodată; așadar vă dați seama că pentru mine, lansarea lui God of War Ragnarok este ceva personal. Și tre’ să vă zic că îl joc deja de vreo două săptămâni și abia așteptam să vă povestesc și vouă despre ceea ce cred că este una dintre acele continuări care punctează mai bine decât originalul.</p>
+            <p>Chiar și azi, la deja <span id="timp-trecut">X ore Y minute Z secunde</span> distanță de ziua lansării sale, consider că God of War 2018 este unul dintre cele mai bune jocuri create vreodată; așadar vă dați seama că pentru mine, lansarea lui God of War Ragnarok este ceva personal. Și tre’ să vă zic că îl joc deja de vreo două săptămâni și abia așteptam să vă povestesc și vouă despre ceea ce cred că este una dintre acele continuări care punctează mai bine decât originalul.</p>
           </section>
   
           <section id = "povestea">
@@ -179,15 +179,16 @@
                   </li>
                   <li>
                     <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_email" required>
+                    <input type="email" id="mail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                   </li>
                   <li>
                     <label for="phone">Număr de telefon:</label>
-                    <input type="tel" id="phone" name="user_phone" required>
+                    <input type="tel" id="phone" name="user_phone" pattern="[0-9]{10}" required>
                   </li>
                   <li>
-                    <label for="msg">Mesaj:</label>
-                    <input id="msg" name="user_message" required>
+                    <label for="alte_detalii">Comentarii:</label>
+                    <br>
+                    <textarea id="alte_detalii" name="alte_detalii"></textarea>
                   </li>
                   <li class="button">
                     <button type="submit">Trimite</button>

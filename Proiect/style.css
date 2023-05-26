@@ -437,6 +437,10 @@ body > .content > footer {
     width: 250px; 
 }
 
+#formular ul li textarea {
+    width: 250px; 
+}
+
 #main-content-final {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -460,5 +464,9 @@ body > .content > footer {
 
 #easter-egg h2 {
     text-align: center;
+}
+
+#timp-trecut {
+    color: rgb(185, 69, 3);
 }
 

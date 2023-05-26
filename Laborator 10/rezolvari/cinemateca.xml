@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+  <film genul="Drama">
+    <titlu limba="coreana">Parasite</titlu>
+    <anulLansarii>2019</anulLansarii>
+    <regizorul>Bong Joon Ho</regizorul>
+    <scenaristul>Bong Joon Ho</scenaristul>
+    <producatorul>Han Jin-won</producatorul>
+    <actori>
+        <actor rol="principal">Song Kang-ho</actor>
+        <actor rol="secundar">Lee Sun-kyun</actor>
+    </actori>
+    <scorul>8.5</scorul>
+  </film>
+
+  <film genul="Thriller">
+    <titlu limba="romana">BOSS</titlu>
+    <anulLansarii>2023</anulLansarii>
+    <regizorul>Bogdan Mirica</regizorul>
+    <scenaristul>Bogdan Mirica</scenaristul>
+    <producatorul>Bogdan Mirica</producatorul>
+    <actori>
+        <actor rol="principal">Laurentiu Banescu</actor>
+        <actor rol="secundar">Sergiu Costache</actor>
+    </actori>
+    <scorul>8.0</scorul>
+  </film>
+
+</root>
+

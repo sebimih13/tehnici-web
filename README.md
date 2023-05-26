@@ -47,6 +47,11 @@ Curs Tehnici Web FMI 2022-2023
 ## Laborator 9 - Rezolvari
 ### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Laborator%209/rezolvari)  
 + [form.html](https://sebimih13.github.io/tehnici-web/Laborator%209/rezolvari/form.html)  
+
+## Laborator 10 - Rezolvari
+### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Laborator%2010/rezolvari)  
++ [cinemateca.html](https://sebimih13.github.io/tehnici-web/Laborator%2010/rezolvari/cinemateca.html)  
++ [fonoteca.html](https://sebimih13.github.io/tehnici-web/Laborator%2010/rezolvari/fonoteca.html)  
   
 ## Proiect  
 [Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  

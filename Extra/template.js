@@ -114,3 +114,16 @@ function draw() {
 // pornire server : python3 -m http.server
 // http://localhost:8000
 
+// events
+.addEventListener("click", function() {
+    // TODO
+});
+
+.addEventListener("keydown", function() {
+    // TODO
+});
+
+.addEventListener("change", function() {
+    // TODO
+});
+

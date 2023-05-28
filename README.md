@@ -65,6 +65,11 @@ Curs Tehnici Web FMI 2022-2023
 + [dots.html](https://sebimih13.github.io/tehnici-web/Model%20examen/resources/dots.html)  
 + [magic.html](https://sebimih13.github.io/tehnici-web/Model%20examen/resources/magic.html)  
   
++ [grid.html](https://sebimih13.github.io/tehnici-web/Model%20examen/rezolvari/grid.html)  
++ [dots.html](https://sebimih13.github.io/tehnici-web/Model%20examen/rezolvari/dots.html)  
++ [magic.html](https://sebimih13.github.io/tehnici-web/Model%20examen/rezolvari/magic.html)  
+  
+  
 ## Proiect  
 [Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  
   

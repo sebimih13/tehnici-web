@@ -1,0 +1,223 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                JS #1                 /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+alert(mesaj); // afișează o casetă de alertare care
+              // conține un mesaj și un buton OK
+
+prompt(text, default-text); // afișează o casetă de dialog 
+                            // care cere utilizatorului 
+                            // să introducă informații
+
+var = declarație cu scop de funcție
+let = declarație cu scop de block
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                JS #2                 /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+---------------------------------------------- LOAD ----------------------------------------------
+window.onload = function() { ... } 
+    
+window.onload = myMain;
+function myMain() { ... }
+
+
+---------------------------------------------- DOM ----------------------------------------------
+document.getElementById(numeId) // un obiect
+document.querySelector(selectorCSS) // primul obiect
+
+document.getElementsByClassName(numeClasa)      -> colectie
+document.getElementsByTagName(numeTag)          -> colectie
+document.getElementsByName(nume)                -> colectie
+
+document.querySelectorAll(selectorCSS)
+
+OBS:
+element.innerHTML = pt a modifica direct codul HTMLs
+
+---------------------------------------------- NODURI DOM ----------------------------------------------
+nodeValue   ->  pentru noduri Text, Comment
+                pentru noduri Element = null 
+nodeName    ->  numele tagului
+nodeType    ->  Document=9, Element=1,
+                Text=3, Comment=8 
+
+
+---------------------------------------------- NAVIGAREA ÎN ARBORE ----------------------------------------------
+node.parentNode         // un obiect
+node.childNodes         // obiect NodeList 
+node.firstChild         // un obiect
+node.lastChild          // un obiect
+node.nextSibling        // un obiect
+node.previousSibling    // un obiect 
+
+
+---------------------------------------------- OPERAȚII CU ELEMENTE ----------------------------------------------
+1. crearea unui element:
+document.createElement("tag")
+document.createTextNode("text")
+
+2. inserarea unui element:
+parinte.appendChild(copil)                  // dacă nodul copil există în arbore, doar mută nodul    
+parinte.insertBefore(CopilNou, CopilVechi)
+
+3. ștergerea / înlocuirea unui element:
+parinte.removeChild(copil)
+parinte.replaceChild(CopilNou, CopilVechi)
+
+
+---------------------------------------------- MODIFICAREA ATRIBUTELOR ----------------------------------------------
+
+el.getAttribute("nume-atribut") // întoarce un string (valoarea atributului specificat)
+
+el.setAttribute("nume-atribut", "valoare")  // adaugă un atribut și valoarea lui
+
+el.hasAttribute("nume-atribut") // întoarce boolean
+el.removeAttribute("nume-atribut") // șterge atributul 
+
+el.proprietateNoua = valoare // adăugare de proprietăți noi
+
+attrs = element.attributes; // întoarce un obiect array-like cu atributele elementului
+
+
+---------------------------------------------- MODIFICAREA ATRIBUTELOR ----------------------------------------------
+
+ecl = element.classList     // clasele asociate unui element
+       
+ecl.length  // nr. de clase asociate elementului
+ecl.item(i) // numele clasei cu indexul i (i = 0,..)
+ecl.add("clasa1","clasa2",...)
+ecl.remove("clasa1","clasa2",...) 
+ecl.contains("clasa") // returns boolean
+
+ecl.toggle("clasa", expresie) 
+-> șterge clasa dacă aceasta există, altfel o adaugă;
+   expresie => boolean: if true, se adaugă clasa,
+                        if false, se șterge clasa 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                JS #3                 /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+---------------------------------------------- OBIECTE EVENT: PROPRIETĂȚI ----------------------------------------------
+
+event.type          -> numele evenimentului  
+event.target        -> ținta inițială a evenimentului 
+event.currentTarget -> ținta curentă a evenimentului (la capturare sau propagare) 
+event.timeStamp     -> numărul de milisecunde de la încărcarea documentului pâna la crearea evenimentului 
+
+
+
+---------------------------------------------- MOUSE EVENTS ----------------------------------------------
+click, dblclick
+mouseover, mouseout
+mousedown, mouseup
+mouseleave 
+
+event.button // 0 (stânga) 1(mijloc) 2(dreapta)
+          
+event.clientX, event.clientY    -> poziția în fereastră (zona vizibilă)
+event.pageX, event.pageY        -> poziția în document
+event.screenX, event.screenY    -> poziția în ecran   
+  
+event.relatedTarget     -> elementul legat de elementul care a declanșat evenimentul
+
+
+---------------------------------------------- KEYBOARD EVENTS ----------------------------------------------
+
+KeyboardEvent:
+-  keydown
+- keyup
+- keypress // deprecated!
+
+
+ event.key      // tasta apasată 
+ event.altKey   // boolean 
+ event.ctrlKey  // boolean 
+ event.keyCode, event.which // deprecated! 
+
+
+---------------------------------------------- EVENT LISTENERS ----------------------------------------------
+
+// addEventListener(type, listener, useCapture)
+el.addEventListener("click", handleClick, false) 
+
+// removeEventListener(type, listener, useCapture)
+el.removeEventListener("click", handleClick, true)
+
+useCapture = 
+false   // BUBLLING (implicit) = se execută mai întâi handlerul pentru copil, apoi handlerul pentru părinte
+true    // CAPTURING           = se execută mai întâi handlerul pentru părinte, apoi cel pentru copil
+
+
+event.stopPropagation()             // oprește propagarea evenimentului în DOM
+
+event.stopImmediatePropagation()    // dacă mai multe funcții listener sunt atașate aceluiași element, 
+                                    // iar una conține event.stopImmediatePropagation(), 
+                                    // funcțiile listener următoare nu mai sunt apelate
+
+event.preventDefault()              // anulează acțiunea implicită a elementului
+
+
+---------------------------------------------- WINDOW ----------------------------------------------
+
+window.setTimeout   // window.setTimeout apelează o funcție sau execută un fragment de cod după un anumit timp (milisecunde)
+vt = setTimeout(numeFunctie, intarziere, parametri);
+vt = setTimeout(function(){}, intarziere, parametri);
+clearTimeout(vt) // anulare funcție lansată
+
+window.setInterval  // execută funcția în mod repetat, la un anumit interval de timp
+vt = setInterval(numeFunctie, interval, parametri);
+vt = setInterval(function(){}, interval, parametri);
+clearInterval(vt) // anulare funcție lansată
+
+window.getComputedStyle(ob, pseudoel)   -> determină stilul efectiv aplicat unui element
+                                        -> întoarce un obiect read-only CSSStyleDeclaration
+
+
+window.location     -> folosit pentru a determina URL-ul paginii curente și pentru a redirecționa browserul către o pagină nouă
+
+window.location.href        // adresa URL a documentului
+window.location.hostname    // numele de domeniu al gazdei web
+window.location.pathname    // calea și numele fișierului paginii curente 
+window.location.protocol    // protocolul folosit http: sau https:
+window.location.hash        // partea din URL care începe cu #
+window.location.assign(url) // încarcă un nou document
+
+
+window.history      -> conține istoria browserului (adresele URL accesate de utilizator)
+
+history.length          // nr. de URL-uri din lista de istoric
+history.back()          // încarcă adresa URL anterioară din lista de istoric 
+history.forward()       // încarcă următoarea adresă URL din lista de istoric
+history.go(number/url)  // încarcă o adresă URL specificată din lista de istoric 
+
+
+window.screen       -> conține informații despre ecranul utilizatorului
+
+screen.availHeight  // înălțimea ecranului (excluzând taskbarul)
+screen.availWidth   // lățimea ecranului (excluzând taskbarul)
+screen.height       // înălțimea totală a ecranului
+screen.width        // lățimea totală a ecranului
+screen.colorDepth
+screen.pixelDepth   // nr. de biți folosiți pentru culoarea unui pixel 
+
+
+window.open(URL, target, caracteristici)    -> deschide o nouă fereastră de browser
+
+var myWindow=window.open();
+myWindow.close();
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                JS #4                 /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+

@@ -1,0 +1,143 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                CSS #1                /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+DISTANȚA/MĂRIMEA
+
+unități absolute: mm, cm, px, in, pt
+unități relative:
+    em: relativ la dimensiunea fontului elementului
+    %: relativ la dimensiunea părintelui
+    vw, vh: relativ la 1% din lățimea/înălțimea viewportului
+    rem: relativ la dimensiunea fontului rădăcinii
+
+
+SELECTORUL UNIVERSAL *
+
+1. SELECTAREA PRIN TIP      =>   numele unui element din document: h1, p, div, a
+
+2. SELECTAREA PRIN ID       =>   div#galben {  }
+                                <div id="galben"> <p>paragraf în div</p> </div>
+
+3. SELECTAREA PRIN CLASĂ    =>  .galben {  }
+                                <div class="galben"> <p>paragraf în div</p> </div>
+                                <p class="galben">alt paragraf fără div</p>
+
+                                EX2:
+                                p.a.b { background-color: yellow;}
+                                p.a, p.b { border: 1px solid pink; }
+                                p.a:not(.b){ color: red; }
+                                p.b:not(.a){ color: cyan; }
+
+                                <div class="a">div</div>            => NIMIC pt ca nu e de tip <p></p>
+                                <p class="a b">paragraf 1</p>       => yellow + border
+                                <p class="a">paragraf 2</p>         => red    + border
+                                <p class="b">paragraf 3</p>         => cyan   + border
+
+4. !important               =>  proprietățile marcate !important sunt aplicate indiferent de specificitatea lor
+
+5. INHERIT                  =>  unele proprietăți pot lua valoarea inherit proprietatea este moștenită de la elementul părinte
+                                folosită pentru a suprascrie un alt stil și a forța comportamentul implicit
+
+                                div { color: red; }
+                                p { color: cyan; }
+                                div>p { color: inherit; }
+
+                                <div><p>paragraf în div</p></div>   => red
+
+6. SELECTAREA PRIN ATRIBUTE =>  e[attr] -> elementele e care au atributul attr
+                                e[attr="val"] -> elementele e cu attr="val"
+                                e[attr~="val"] -> elementele e cu proprietatea că valoarea lui attr conține cuvântul val
+                                e[attr*="val"] -> elementele e cu proprietatea că valoarea lui attr conține subșirul val
+
+
+
+COMBINAREA SELECTORILOR
+1. selectori pentru descendenți
+E F   selectează toate elementele F care sunt descendenți ai lui E
+
+2. selectori pentru copii
+E > F   selectează elementele F care sunt copii ai lui E
+
+3. selectori pentru frați
+E + F   selectează toate elementele F care sunt frați cu E și care urmează imediat după E
+E ~ F   selectează toate elementele F care sunt frați cu E și care urmează după E
+
+
+
+FONTS
+
+VIZIBILITATE                =>  setează vizibilitatea unui element
+                                chiar dacă vizibilitatea este hidden, elementul ocupă loc în pagină
+
+OVERFLOW                    =>  descrie modul în care este redat textul care iese dintr-un cadru
+
+DISPLAY                     =>  descrie modul în care este afișat un element în pagină
+                                spațiul pe care îl ocupă este lungimea elementului
+                                ignoră proprietățile width și height, dar acceptă border, padding
+                                permisă stilizarea folosind box model
+                                plasare pe rând nou
+                                element poziționat inline care poate fi stilizat ca un element bloc
+                                acceptă proprietățile width și height
+                                elementul nu este afișat
+                                deși elementul este eliminat din pagină, el este prezent în DOM
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                CSS #2                /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+PSEUDO-CLASE                =>  selector:pseudo-class {  }
+                                
+                                cuvânt-cheie adăugat unui selector ce specifică o stare specială a elementului selectat
+                                ex. folosite pentru definirea stilului
+                                - unui element la trecerea cu mouse-ul peste el
+                                - diferit pentru legături vizitate și nevizitate
+
+                                :link           - legături care nu au fost vizitate 
+                                :visited        - legături care au fost vizitate 
+                                :hover          - elemente peste care se trece cu mouse-ul 
+                                :active         - legături active 
+                                :not()          - elementele care nu apar în argumentul lui not 
+                                :first-child    - selectează un element care este primul copil al unui alt element
+                                :first-of-type  - selectează elementul care este primul copil de tipul specificat al unui alt element
+                                :nth-of-type(n) - selectează elementul care este al n-lea copil de tipul specificat al unui alt element
+                                :nth-child(n)   - selectează elementul de tipul specificat care este al n-lea copil al unui alt element
+
+
+PSEUDO-ELEMENTE             =>  ::first-letter  - prima literă a unui text */
+                                ::first-line    - prima linie a unui element block */
+
+                                ::before        - folosite pentru a adăuga conținut
+                                ::after         - înainte/după un element HTML
+                                                - folosite cu proprietatea content
+	
+
+POSITION                    =>  tipul de poziționare a unui element în pagină
+
+                                position:static;
+                                position:relative;
+                                position:absolute;
+                                position:fixed;
+                                position:sticky;
+
+
+SUPRAPUNERI: Z-INDEX
+
+PROPRIETATEA FLOAT
+PROPRIETATEA CLEAR
+
+FLEXBOX
+GRID LAYOUT
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////                CSS #3                /////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

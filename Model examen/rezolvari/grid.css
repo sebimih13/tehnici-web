@@ -1,0 +1,69 @@
+
+div {
+    padding: 20px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: "A B"
+                         "C D";
+    grid-template-columns: 150px 150px;
+    grid-gap: 10px;
+}
+
+#A, #B, #C, #D {
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+#D {
+    display: grid;
+    grid-template-areas: 
+                         "E E"
+                         "F G";
+    grid-gap: 10px;
+}
+
+#E, #F, #G {
+    background-color: #ffc0cb;
+    color: black;
+    border-style: none;
+}
+
+#A {
+    grid-area: A;
+}
+
+#B {
+    grid-area: B;
+}
+
+#C {
+    grid-area: C;
+}
+
+#D {
+    grid-area: D;
+}
+
+#E {
+    grid-area: E;
+}
+
+#F {
+    grid-area: F;
+}
+
+#G {
+    grid-area: G;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    #wrapper {
+        display: inline;
+    }
+}
+

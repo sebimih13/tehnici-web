@@ -1,0 +1,78 @@
+
+
+<p> </p>	=> paragraf nou		- incepe si se termina cu o linie noua
+
+<br>		=> linie noua		
+<hr>		=> 
+<img>		=> imagine
+<link>		=> 
+<meta>		=> 
+
+<div> </div>		=> stilizare
+<span> </span>      => stilizare
+
+<h1> </h1>		
+...			        => heading	 	- incepe si se termina cu o linie noua
+<h6> </h6>
+
+<ul> </ul>          => o listă în care ordinea elementelor nu are importanță
+<ol> </ol>          => o listă în care ordinea elementelor este importantă
+<li> </li>          => folosit pentru a crea elementele unei liste
+
+<dl> </dl>
+<dt> </dt>          => LISTE DE DESCRIERI
+<dd> </dd> 
+
+
+<a>                 => elementul ancora
+<a href="URL"> conținut </a>
+
+<tag atribut1 = "" atribut2 = "" ...> </tag>
+
+<img src="adresa-imaginii" alt="text-explicativ">
+
+<figure>
+    <img src="adresa-imaginii" alt="text-explicativ">
+    <figcaption> </figcaption>
+</figure>
+
+<audio src="URL-audio" controls> mesaj </audio>
+<video src="URL-video" controls autoplay> mesaj </video>
+<video src="URL-video" controls poster="URL-img"> mesaj </video>
+
+<iframe src="URL" width="n1" height="n2"> text afișat dacă website-ul nu poate fi inclus </iframe>  => imbricarea unei pagini în interiorul paginii curente
+
+TABELE
+- pentru definirea tabelelor se pot folosi și elementele thead, tbody, tfoot, colgroup, col
+- atribute specifice pentru td și th: colspan și rowspan pentru celule care ocupă mai multe coloane/linii
+
+<svg>
+<canvas>
+
+<main> </main>
+
+<section> </section>
+<article> </article>
+OBS:  <article> va fi plasat într-un <section>
+
+<title> </title>
+<header> </header>    
+<footer> </footer>
+
+<nav> </nav>
+
+<aside> conținut </aside>
+
+<strong> text important, de atenționare </strong>
+<em> text accentuat </em>
+<small> comentarii adiționale </small>
+
+
+<b> cuvinte cheie </b>                                                      -> bold
+<i> termeni științifici / cuvinte în altă limbă / text alternativ </i>      -> italic
+
+
+<hr>        -> o linie -----------------------------
+
+
+

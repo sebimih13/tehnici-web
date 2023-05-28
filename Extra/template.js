@@ -1,10 +1,36 @@
 
+function getRandomNumber(max)
+{
+    Math.floor(Math.random() * max);
+}
+
 window.onload=function() {
     console.log("test");
 
+    // TODO : loadJSON()
+    const url = 'magic.json';       // TODO : SCHIMBA NUMELE
+    var promiseFetch = fetch(url);
+    let possanswers;
+
+    promiseFetch.then((response) => {
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+        return response.text();
+    })
+    .then(function(text) {    
+            possanswers = JSON.parse(text); 
+    })
+    .catch(function(err){
+            alert(err);
+    });   
+
+    // TODO : Foloseste mai departe : possanswers
+
     // TODO : draw()
-    draw();
+    // draw();
 }
+
 
 // pt desene canvas
 function draw() {

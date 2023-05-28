@@ -16,10 +16,10 @@ window.onload=function() {
     })
     .then(function(text) {    
             possanswers = JSON.parse(text); 
-        })
+    })
     .catch(function(err){
             alert(err);
-        });   
+    });   
 
     draw();
 

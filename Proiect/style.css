@@ -445,6 +445,7 @@ body > .content > footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
+    background: rgb(31,32,36);
 }
 
 #stanga {
@@ -452,7 +453,10 @@ body > .content > footer {
 }
 
 #easter-egg {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     padding-top: 10%;
 }
 
@@ -460,6 +464,7 @@ body > .content > footer {
     width: 50%;
     height: auto;
     border: 10px solid white;
+    align-self: center;
 }
 
 #easter-egg h2 {

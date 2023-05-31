@@ -31,8 +31,6 @@ function submitForm(event)
 
     const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Adresa de email trebuie sa fie in format valid
     const phoneRegex = /^[0-9]{10}$/;               // Numarul de telefon trebuie să contina exact 10 cifre
-
-    console.log(nameInput);
     
     if (nameInput.value.trim().length == 0)
     {
@@ -74,7 +72,7 @@ function addStars(parentElementId)
         checkboxInput.type = "checkbox";
         checkboxInput.id = `nota-${parentElementId}-${i}`;
         checkboxInput.name = `${i}`;
-        checkboxInput.style.marginLeft = "30px";
+        checkboxInput.style.marginLeft = "20px";
 
         checkboxInput.addEventListener("change", function() {
             event.stopPropagation();
@@ -86,7 +84,6 @@ function addStars(parentElementId)
             }
             event.target.checked = true;
 
-            console.log(event.target.name);
             localStorage.setItem(`nota-${parentElementId}`, event.target.name);
         });
         

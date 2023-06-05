@@ -70,9 +70,9 @@ Curs Tehnici Web FMI 2022-2023
   
 ## Examen 2023 - Rezolvari
 ### Folder -> [Link](https://github.com/sebimih13/tehnici-web/tree/main/Examen%202023)  
-+ [layout.html](https://github.com/sebimih13/tehnici-web/blob/main/Examen%202023/layout.html)  
-+ [burst.html](https://github.com/sebimih13/tehnici-web/blob/main/Examen%202023/burst.html)  
-+ [poke.html](https://github.com/sebimih13/tehnici-web/blob/main/Examen%202023/poke.html)    
++ [layout.html](https://sebimih13.github.io/tehnici-web/Examen%202023/layout.html)  
++ [burst.html](https://sebimih13.github.io/tehnici-web/Examen%202023/burst.html)  
++ [poke.html](https://sebimih13.github.io/tehnici-web/Examen%202023/poke.html)    
   
 ## Proiect  
 [Proiect](https://sebimih13.github.io/tehnici-web/Proiect/index.html)  
